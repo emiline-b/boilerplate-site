@@ -108,12 +108,7 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.875em;
-  font-weight: 500;
-  
-}
+
 h2
 h3, 
 h4 {
@@ -509,6 +504,7 @@ input[type=button] {
     max-width: 640px;
     margin: 100px 0;
   }
+  
   h3 {
     font-size: 2.25em;
     line-height: 1.333;
@@ -541,6 +537,9 @@ input[type=button] {
     display: none;
   }
   /*Hero area*/
+  .hero-area {
+    min-height: 600px;
+  }
   .hero-area h1 {
     font-size: 3em;
     line-height: 1;
@@ -681,12 +680,13 @@ header {
     line-height: 1.333;
   }
   .hero-area h1 {
-    width: 80%
+    width: 80%;
     font-size: 3.75em;
   }
   .hero-area figure {
     width: 30%;
   }
+  
   aside .content-wrapper {
     justify-content: space-around; 
   }
