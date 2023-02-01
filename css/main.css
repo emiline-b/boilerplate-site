@@ -114,6 +114,7 @@ h1 {
   font-weight: 500;
   
 }
+h2
 h3, 
 h4 {
   font-family: 'Poppins', sans-serif;
@@ -231,12 +232,13 @@ footer .social-icons p {
 
 /**Mobile Styles - Homepage - ******/
 .hero-area {
+  background-image: url('../img/unplugged-retreat.jpg'); 
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   display:flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-image: url('../img/unplugged-retreat.jpg'); center no-repeat;
-  background-size: cover;
-  min-height: 500px;
 
   
 }
@@ -260,7 +262,9 @@ aside {
 }
 aside .form {
   margin-top: 30px;
+
 }
+
  
 input[type=text] {
   box-sizing: border-box;
@@ -302,7 +306,7 @@ input[type=button] {
 }
 
 
-.features .features-item-description {
+.features .features-items {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -319,17 +323,16 @@ input[type=button] {
   display:flex;
   justify-content: center;
   flex-flow: row wrap;
-  color: white;
-  width: 100%;
-  
+  color: white; 
 }
-.reviews h3 {
+
+.reviews h2 {
   margin-bottom: 40px;
   line-height: 1;
 }
-.reviews h4 {
+.reviews h3 {
   width: 55%;
-  padding: 20px 0;
+  margin: 20px 0;
  
 }
 
@@ -340,15 +343,33 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  color: white;
 }
+.map figure {
+  width: 100%;
+  height: 0;
+  padding-bottom: 125%;
+  overflow: hidden;
+  position: relative;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .contact-section {
   background-color: #2a423a;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-
+  color: white;
 }
+
 .contact-content p {
   margin: 0;
 }
@@ -359,6 +380,7 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  color: white;
 }
 .faq .content-wrapper {
   margin: 50px 0 0 0;
@@ -522,7 +544,7 @@ input[type=button] {
   }
   aside .content-wrapper .form-description, 
   aside .content-wrapper .form {
-    width:40%
+    width: 40%;
     margin: 0;
   }
 
@@ -541,17 +563,23 @@ input[type=button] {
     width: 62%;
   }
   /*Reviews*/
+  
   .reviews article {
     display: flex;
     justify-content: space-between;
+    flex-flow: row wrap;
+    width: 100%;
   }
-  .reviews h3{
+  .reviews h2{
+
     width: 85%;
   }
+  .reviews article figure, 
   .reviews article div{
     width: 49%;
+
   }
-  .reviews h4 {
+  .reviews h3 {
     width: 75%;
     margin: 0;
   }
@@ -597,7 +625,6 @@ footer p {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-
 }
 .contact-content h4 {
   font-size: 1.5em;
@@ -661,6 +688,9 @@ header {
   .features article {
     flex-basis: 33%;
   }
+  .reviews {
+    width: 100%;
+  }
   .reviews h2 {
     padding-bottom: 50px;
   }
@@ -673,11 +703,15 @@ header {
   /*--------------------About Page-----------------*/
   .mission h2, 
   .contact-section .content-wrapper h2 {
-    width: 95%
+    width: 95%;
     font-size: 3em;
+  }
+  .contact {
+    color: white;
   }
   .contact-content h4 {
     font-size: 1.875em;
+    color: white;
   }
   /*------------------FAQ Page------------------*/
   .faq h2 {
